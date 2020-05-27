@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="icon-share-blue" transform="translate(-999 -845)">
+    <path id="icon-share" d="M10.25,10.536A2.985,2.985,0,1,1,9.5,12.5a2.944,2.944,0,0,1,.069-.628L5.75,9.963a3,3,0,1,1,0-3.927L9.569,4.127A2.931,2.931,0,0,1,9.5,3.5a3.034,3.034,0,1,1,.75,1.964L6.431,7.372a2.887,2.887,0,0,1,0,1.255ZM14,3.5A1.5,1.5,0,1,0,12.5,5,1.5,1.5,0,0,0,14,3.5ZM3.5,9.5A1.5,1.5,0,1,1,5,8,1.5,1.5,0,0,1,3.5,9.5Zm7.5,3A1.5,1.5,0,1,0,12.5,11,1.5,1.5,0,0,0,11,12.5Z" transform="translate(998.5 844.5)" fill="#10389b" fill-rule="evenodd"/>
+    <ellipse id="Ellipse_30" data-name="Ellipse 30" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(1000 850)" fill="#10389b"/>
+    <ellipse id="Ellipse_31" data-name="Ellipse 31" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(1009 845.5)" fill="#10389b"/>
+    <ellipse id="Ellipse_32" data-name="Ellipse 32" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(1009 854.5)" fill="#10389b"/>
+  </g>
+</svg>

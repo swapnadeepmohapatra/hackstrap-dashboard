@@ -1,0 +1,57 @@
+
+.userImage{
+    background-color: white;
+    border-radius: 50%;
+    height: 2.4rem;
+    width: 2.4rem;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.userImage img{
+    width: 2.4rem;
+}
+
+/* .userInfo{
+    font-family: 'Roboto', monospace;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    background-color: white;
+    border-radius: 0.1rem;
+    padding: 1.5rem;
+    min-width: 18rem;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: initial;
+}
+
+.userTile{
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.logout{
+    background-color: #10389B;
+    padding: 0.4rem 0.8rem;
+    color: white;
+    border: none;
+    margin: 0.8rem auto 0;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    opacity: 0.8;
+} */
+
+.UserProfileWrapper {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

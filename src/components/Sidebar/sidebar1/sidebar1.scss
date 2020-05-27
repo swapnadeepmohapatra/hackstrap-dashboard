@@ -1,0 +1,49 @@
+@import '../../../Sass/abstract/variables';
+
+.Sidebar1 {
+  flex-flow: column;
+  display: flex;
+  background-color: #110e10;
+  width: 3.625rem;
+  z-index: 1001;
+  min-height: calc(100vh - 3.7rem);
+}
+
+.sidebar1-images-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  height: 2.6rem;
+  width: 2.6rem;
+  &:hover {
+    background-color: #10389b;
+  }
+}
+
+.highlight {
+  background-color: #10389b;
+}
+
+.sidebar1-images-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.sidebar1-images-container-envelop {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.sidebar1-images-container-envelop:first-child {
+  margin-top: 3rem;
+}
+
+@media only screen and (max-height: 625px) {
+  .Sidebar1 {
+    height: 40rem;
+  }
+}

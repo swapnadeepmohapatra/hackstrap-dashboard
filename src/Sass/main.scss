@@ -1,0 +1,27 @@
+@import './abstract/variables';
+
+@import './components/button';
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+// devices above 480px
+@media only screen and (min-width: 480px) {
+
+}
+
+// devices above 950px
+@media only screen and (min-width: 950px) {
+
+    .overlay {
+        display: none;
+    }
+
+}

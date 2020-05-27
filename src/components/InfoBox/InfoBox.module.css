@@ -1,0 +1,36 @@
+.box {
+  position: relative;
+  width: fit-content;
+}
+
+.contentBox {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  height: 6rem;
+  min-width: 10rem;
+  overflow-y: auto;
+  color: black;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.arrow {
+  background-color: #2d2626;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: -0.5rem;
+  left: calc(50% - 0.25rem);
+  transform: rotate(-135deg);
+  z-index: 0;
+}
+
+.contentBox::-webkit-scrollbar {
+  width: 7px;
+}
+
+.contentBox::-webkit-scrollbar-thumb {
+  background: #333333;
+}

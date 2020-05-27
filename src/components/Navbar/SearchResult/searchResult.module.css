@@ -1,0 +1,10 @@
+.headTag{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 0.25rem 0.5rem;
+}
+.result{
+    padding: 0.25rem 0.5rem;
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+}
