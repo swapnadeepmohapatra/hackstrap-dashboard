@@ -120,5 +120,8 @@
 .entrySubmList :nth-child(4) button {
   background: rgba(233, 63, 0, 0.85);
 }
-
-/* ==================== */
+@media all and (max-width: 480px) {
+  .welcomeMsg {
+    flex-direction: column;
+  }
+}
