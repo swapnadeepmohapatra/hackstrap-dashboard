@@ -2,157 +2,25 @@
   margin-right: 200px;
 }
 
-.welcomeMsg {
-  background-color: white;
-  background: #ffffff;
-  border-radius: 20px;
-  margin: 35px;
-  padding: 5px 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.manageItemsList {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 20px 0 0;
-  justify-content: center;
-}
-
-.manageItemsList li {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.currPlan button {
-  font-size: 15.4px;
-  line-height: 18px;
-  background: #cfd8dc;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 11px;
-  border: 0;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.upgPlan button {
-  font-size: 15.4px;
-  line-height: 18px;
-  background: #ffc50b;
-  box-shadow: 0 4.4px 4.4px rgba(0, 0, 0, 0.25);
-  border-radius: 11px;
-  border: 0;
-  padding: 5px 10px;
-  color: #000;
-}
-
-.collaps button {
-  font-size: 15.4px;
-  line-height: 18px;
-  background: #ffffff;
-  border-radius: 11px;
-  border: 0;
-  padding: 5px 10px;
-  color: #000;
-}
-
-.entrySubm {
-  background-color: white;
-  background: #ffffff;
-  border-radius: 20px;
-  margin: 35px;
-  padding: 5px 20px;
-  display: flex;
-  flex-direction: column;
-}
-
 .line {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.entrySubmList {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 20px 0 0;
-  /* scroll-snap-type: x mandatory; */
-  overflow: auto;
-  /* overflow: hidden; */
-  display: flex;
-  /* -ms-overflow-style: none; */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); */
 }
 
-.entrySubmList li {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 50px;
-  min-width: 239px;
-  scroll-snap-align: center;
-}
-
-.entrySubmList li button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  border-radius: 50px;
-  font-size: 22px;
-  line-height: 26px;
-  background: #cfd8dc;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 0;
-  cursor: pointer;
-  color: #ffffff;
-  font-weight: bold;
-  max-height: 100px;
-}
-
-.entrySubmList :nth-child(1) button {
-  background-color: rgba(16, 56, 155, 0.85);
-}
-.entrySubmList :nth-child(2) button {
-  background: rgba(5, 185, 208, 0.85);
-}
-.entrySubmList :nth-child(3) button {
-  background: rgba(60, 207, 142, 0.85);
-}
-.entrySubmList :nth-child(4) button {
-  background: rgba(233, 63, 0, 0.85);
-}
 @media all and (max-width: 480px) {
-  .welcomeMsg {
-    flex-direction: column;
-  }
-
   .welcomeMsgParent {
     margin-right: 0px;
   }
-}
 
-.recomd {
-  background-color: white;
-  background: #ffffff;
-  border-radius: 20px;
-  margin: 35px;
-  padding: 5px 20px;
-  display: flex;
-  flex-direction: column;
-}
-.manageEntries {
-  background-color: white;
-  background: #ffffff;
-  border-radius: 20px;
-  margin: 35px;
-  padding: 5px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.grid3 {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  .grid2 {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
 }
