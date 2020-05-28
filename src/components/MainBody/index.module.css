@@ -1,6 +1,7 @@
 .welcomeMsgParent {
   margin-right: 200px;
 }
+
 .welcomeMsg {
   background-color: white;
   background: #ffffff;
@@ -124,6 +125,10 @@
   .welcomeMsg {
     flex-direction: column;
   }
+
+  .welcomeMsgParent {
+    margin-right: 0px;
+  }
 }
 
 .recomd {
@@ -148,5 +153,6 @@
 
 .grid3 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
