@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./index.module.css";
 import List from "./list";
+import ListRec from "./listRec";
 
 function MainBody() {
   return (
@@ -24,6 +25,23 @@ function MainBody() {
         <div className={Styles.line}></div>
         <div>
           <List />
+        </div>
+      </div>
+      <div className={Styles.recomd}>
+        <h3>Recommended competitions, events and opportunities</h3>
+        <div className={Styles.line}></div>
+        <div>
+          <ListRec />
+        </div>
+      </div>
+      <div className={Styles.grid3}>
+        <div className={Styles.manageEntries}>
+          <h3>Manage your Entires</h3>
+          <div className={Styles.line}></div>
+        </div>
+        <div className={Styles.manageEntries}>
+          <h3>Complete Your Profile</h3>
+          <div className={Styles.line}></div>
         </div>
       </div>
     </div>
