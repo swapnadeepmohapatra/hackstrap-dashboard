@@ -5,6 +5,7 @@ import SumbitEntry from "../SubmitEntry";
 import RecommendedCompetitions from "../RecommendedCompetitions";
 import ManageEntries from "../ManageEntries";
 import CompleteProfile from "../CompleteProfile";
+import ProfileSelfDesc from "../ProfileSelfDesc";
 
 function MainBody() {
   return (
@@ -15,6 +16,11 @@ function MainBody() {
       <div className={Styles.grid2}>
         <ManageEntries />
         <CompleteProfile />
+      </div>
+      <div className={Styles.grid3}>
+        <ProfileSelfDesc />
+        <ProfileSelfDesc />
+        <ManageEntries />
       </div>
     </div>
   );
