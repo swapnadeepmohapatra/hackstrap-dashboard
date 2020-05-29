@@ -4,6 +4,7 @@ import WelcomeMessage from "../WelcomeMessage";
 import SumbitEntry from "../SubmitEntry";
 import RecommendedCompetitions from "../RecommendedCompetitions";
 import ManageEntries from "../ManageEntries";
+import CompleteProfile from "../CompleteProfile";
 
 function MainBody() {
   return (
@@ -13,10 +14,7 @@ function MainBody() {
       <RecommendedCompetitions />
       <div className={Styles.grid2}>
         <ManageEntries />
-        <div className={Styles.manageEntries}>
-          <h3>Complete Your Profile</h3>
-          <div className={Styles.line}></div>
-        </div>
+        <CompleteProfile />
       </div>
     </div>
   );
