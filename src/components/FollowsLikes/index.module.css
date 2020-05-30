@@ -1,0 +1,35 @@
+.followsLike {
+  background-color: white;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 35px;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.followsLike ul {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.followsLike li {
+  background: #ffffff;
+  color: #10389b;
+  box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 15px;
+  min-width: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

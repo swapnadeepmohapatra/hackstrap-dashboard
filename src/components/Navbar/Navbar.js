@@ -8,19 +8,10 @@ import Logo from "../../images/adjacentLogo.svg";
 import InfoBox from "../InfoBox/InfoBox";
 
 function Navbar({ toggleSidebar, renderSidebar, isAuth, name, email }) {
-  const [startup, setStartup] = useState([]);
-  const [investor, setInvestor] = useState([]);
-  // const [incubator, setIncubator] = useState([]);
-  // const [accelerator, setAccelerator] = useState([]);
   const [showInfoBox, setShowInfoBox] = useState({ type: null });
   // const [navbarClass, setNavbarClass] = useState([Classes.navbar])
 
-  const setNull = () => {
-    setInvestor([]);
-    setStartup([]);
-    // setIncubator([]);
-    // setAccelerator([]);
-  };
+  const setNull = () => {};
 
   const node = useRef();
   const showBoxes = useRef();
@@ -54,61 +45,6 @@ function Navbar({ toggleSidebar, renderSidebar, isAuth, name, email }) {
       // document.removeEventListener('scroll', () => scrollFunc(navbarClass));
     };
   }, []);
-
-  const search = async (e) => {
-    const query = e.target.value;
-    if (query) {
-      const url = `https://api.hackstrap.com/beta/api/database/search/`;
-      try {
-        const [
-          resStartup,
-          resInvestor,
-          resIncubator,
-          resAccelerator,
-        ] = await Promise.all([
-          // axios.get(url + "companies?query=" + query),
-          // axios.get(url + "investors?query=" + query),
-          // axios.get(url + 'incubators?query=' + query),
-          // axios.get(url + "accelerators?query=" + query),
-        ]);
-        setStartup(resStartup.data.result);
-        setInvestor(resInvestor.data.result);
-        // setIncubator(resIncubator.data.result);
-        // setAccelerator(resAccelerator.data.result);
-      } catch (error) {
-        console.error(error);
-      }
-    } else {
-      setNull();
-    }
-  };
-
-  const renderAuthenticatedPart = () => {
-    if (isAuth) {
-      return (
-        <div className={Classes.buttons}>
-          {/* <UserCard name={name} email={email} /> */}
-        </div>
-      );
-    } else {
-      return (
-        <div className={Classes.buttons}>
-          <Link to={{ pathname: "/authentication", state: { isSignin: true } }}>
-            <div className={Classes.authWrapper}>
-              <button className={Classes.in}>Sign In</button>
-            </div>
-          </Link>
-          <Link
-            to={{ pathname: "/authentication", state: { isSignin: false } }}
-          >
-            <div className={Classes.authWrapper}>
-              <button className={Classes.up}>Sign Up</button>
-            </div>
-          </Link>
-        </div>
-      );
-    }
-  };
 
   const handleInfoBox = (type) => {
     if (type !== showInfoBox.type) setShowInfoBox({ type });
@@ -155,29 +91,13 @@ function Navbar({ toggleSidebar, renderSidebar, isAuth, name, email }) {
               <div className={Classes.input}>
                 <input
                   type="text"
-                  onKeyUp={search}
                   placeholder="Search for Companies, Investors,  Incubators and more"
                 />
               </div>
               <div className={Classes.icon}>
                 <img src={Search} alt="search" />
               </div>
-              <div className={Classes.resultBox} ref={node}>
-                {/* <SearchResult
-                  tag="Companies"
-                  result={startup}
-                  navTo="company"
-                  setNull={setNull}
-                />
-                <SearchResult
-                  tag="Investors"
-                  result={investor}
-                  navTo="investor"
-                  setNull={setNull}
-                /> */}
-                {/* <SearchResult tag="Incubators" result={incubator} navTo="incubator" setNull={setNull} />
-                                <SearchResult tag="Accelerator" result={accelerator} navTo="accelerator" setNull={setNull} /> */}
-              </div>
+              <div className={Classes.resultBox} ref={node}></div>
             </div>
           </div>
         </div>

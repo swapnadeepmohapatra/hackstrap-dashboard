@@ -6,6 +6,9 @@ import RecommendedCompetitions from "../RecommendedCompetitions";
 import ManageEntries from "../ManageEntries";
 import CompleteProfile from "../CompleteProfile";
 import ProfileSelfDesc from "../ProfileSelfDesc";
+import ProfileDefGoals from "../ProfileDefGoals";
+import MyLists from "../MyLists";
+import FollowsLike from "../FollowsLikes";
 
 function MainBody() {
   return (
@@ -19,8 +22,12 @@ function MainBody() {
       </div>
       <div className={Styles.grid3}>
         <ProfileSelfDesc />
-        <ProfileSelfDesc />
-        <ManageEntries />
+        <ProfileDefGoals />
+        <MyLists />
+      </div>
+      <div className={Styles.grid2}>
+        <FollowsLike heading={"My Follows"} />
+        <FollowsLike heading={"My Likes"} />
       </div>
     </div>
   );
