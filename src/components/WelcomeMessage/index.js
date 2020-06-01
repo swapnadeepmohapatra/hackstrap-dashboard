@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./index.module.css";
 
-function WelcomeMessage() {
+function WelcomeMessage({ onClick }) {
   return (
     <div className={Styles.welcomeMsg}>
       <h3>Welcome to your dashboard</h3>
@@ -13,7 +13,7 @@ function WelcomeMessage() {
           <button>{"Upgrade You Plan"}</button>
         </li>
         <li className={Styles.collaps}>
-          <button>{"Collaps all"}</button>
+          <button onClick={onClick}>{"Collaps all"}</button>
         </li>
       </ul>
     </div>

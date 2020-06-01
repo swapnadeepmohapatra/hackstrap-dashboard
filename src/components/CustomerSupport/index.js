@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Styles from "./index.module.css";
-import ListRec from "../MainBody/listRec";
 
-function RecommendedCompetitions({ showAll }) {
+function CustomerSupport({ showAll }) {
   const [show, setShow] = useState(showAll);
 
   useEffect(() => {
@@ -10,9 +9,9 @@ function RecommendedCompetitions({ showAll }) {
   }, [showAll]);
 
   return (
-    <div className={Styles.recomd}>
+    <div className={Styles.manageProfile}>
       <h3>
-        Recommended competitions, events and opportunities{" "}
+        Customer Support
         <button
           onClick={() => {
             setShow(!show);
@@ -58,13 +57,19 @@ function RecommendedCompetitions({ showAll }) {
       {show && (
         <>
           <div className={Styles.line}></div>
-          <div>
-            <ListRec />
-          </div>
+          <h4>
+            Contact us for any queries or support at{" "}
+            <strong>contact@hackstrap.com</strong> or
+            <strong>+91 8639688604</strong>
+          </h4>
+          <h4>
+            Join the telegram support group chat with this{" "}
+            <strong>invite link</strong>{" "}
+          </h4>
         </>
       )}
     </div>
   );
 }
 
-export default RecommendedCompetitions;
+export default CustomerSupport;

@@ -1,0 +1,94 @@
+.line {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.manageProfile {
+  background-color: white;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 35px;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); */
+}
+.grid2 p {
+  font-style: italic;
+  font-size: 16px;
+}
+.grid2 p strong {
+  color: #e9b12b;
+}
+
+.profileSteps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profileSteps h4 {
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.entriesList {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.entriesList li {
+  display: flex;
+  justify-content: space-between;
+}
+.entriesList li p {
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.caption {
+  color: #00bcd4;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.entriesList li:nth-child(even) {
+  background: rgba(207, 216, 220, 0.2);
+  margin: 5px;
+  padding: 5px;
+  font-weight: 500;
+}
+.entriesList li:nth-child(odd) {
+  font-weight: 500;
+  background: rgba(239, 239, 239, 0.2);
+  margin: 5px;
+  padding: 5px;
+}
+
+strong {
+  color: #00bcd4;
+}
+
+@media all and (max-width: 700px) {
+  .welcomeMsgParent {
+    margin-right: 0px;
+  }
+
+  .grid2 {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
