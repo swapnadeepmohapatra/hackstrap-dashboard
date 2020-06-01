@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import List from "../MainBody/list";
 import Styles from "./index.module.css";
+import Caros from "../MainBody/Caros";
+
 function SumbitEntry({ showAll }) {
   const [show, setShow] = useState(showAll);
 
@@ -57,7 +58,8 @@ function SumbitEntry({ showAll }) {
         <>
           <div className={Styles.line}></div>
           <div>
-            <List />
+            {/* <List /> */}
+            <Caros />
           </div>
         </>
       )}

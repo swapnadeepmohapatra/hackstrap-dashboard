@@ -11,11 +11,10 @@ ul {
 }
 
 .entrySubmList li {
-  /* margin-left: 10px;
-  margin-right: 10px; */
-  padding: 20px;
-  /* min-width: 00px; */
-  scroll-snap-align: center;
+  display: flex !important;
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: center;
 }
 
 .entrySubmList li button {
@@ -26,7 +25,7 @@ ul {
   border-radius: 50px;
   font-size: 18px;
   line-height: 26px;
-  background: #cfd8dc;
+  background: rgba(16, 56, 155, 0.85);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 0;
   cursor: pointer;
@@ -35,9 +34,6 @@ ul {
   max-height: 100px;
 }
 
-.entrySubmList :nth-child(1) button {
-  background-color: rgba(16, 56, 155, 0.85);
-}
 .entrySubmList :nth-child(2) button {
   background: rgba(5, 185, 208, 0.85);
 }
@@ -47,8 +43,6 @@ ul {
 .entrySubmList :nth-child(4) button {
   background: rgba(233, 63, 0, 0.85);
 }
-
-/* ==================== */
 
 .lsit-aa {
   display: flex;
@@ -65,4 +59,8 @@ ul {
   outline: none;
   border: none;
   align-self: center;
+}
+
+.img-cards {
+  width: 250px;
 }
