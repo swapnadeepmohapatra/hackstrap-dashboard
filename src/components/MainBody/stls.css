@@ -32,6 +32,7 @@ ul {
   color: #ffffff;
   font-weight: bold;
   max-height: 100px;
+  width: 80%;
 }
 
 .entrySubmList :nth-child(2) button {

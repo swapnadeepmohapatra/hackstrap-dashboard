@@ -55,6 +55,8 @@
   font-size: 18px;
   line-height: 24px;
   color: #333333;
+  height: 300px;
+  overflow-y: auto;
 }
 
 .entriesList li {

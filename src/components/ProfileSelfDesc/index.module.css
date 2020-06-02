@@ -19,7 +19,6 @@
   list-style-type: none;
   padding: 0;
   margin: 20px 0 0;
-  /* justify-content: center; */
   flex-wrap: wrap;
 }
 
@@ -55,6 +54,8 @@
   font-size: 18px;
   line-height: 24px;
   color: #333333;
+  height: 300px;
+  overflow-y: auto;
 }
 
 .entriesList li {
@@ -76,4 +77,19 @@
   background: rgba(239, 239, 239, 0.2);
   margin: 5px;
   padding: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #c1c1c1;
 }

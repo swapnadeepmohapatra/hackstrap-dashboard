@@ -19,8 +19,8 @@
   list-style-type: none;
   padding: 0;
   margin: 20px 0 0;
-  /* justify-content: center; */
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .manageItemsList li {
@@ -55,6 +55,8 @@
   font-size: 18px;
   line-height: 24px;
   color: #333333;
+  height: 200px;
+  overflow-y: auto;
 }
 
 .entriesList li {
@@ -83,4 +85,10 @@
   background: rgba(239, 239, 239, 0.2);
   margin: 5px;
   padding: 5px;
+}
+
+@media all and (max-width: 480px) {
+  .manageItemsList {
+    justify-content: space-around;
+  }
 }

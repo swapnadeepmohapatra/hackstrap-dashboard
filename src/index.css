@@ -33,3 +33,7 @@ h3 button {
   color: black;
   background-color: transparent;
 }
+
+button:focus {
+  outline: 0;
+}
