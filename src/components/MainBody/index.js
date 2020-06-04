@@ -33,7 +33,7 @@ function MainBody() {
         <ProfileDefGoals showAll={showAll} />
         <MyLists showAll={showAll} />
       </div>
-      <div className={Styles.grid2}>
+      <div className={Styles.grid2Follow}>
         <FollowsLike heading={"My Follows"} showAll={showAll} />
         <FollowsLike heading={"My Likes"} showAll={showAll} />
       </div>

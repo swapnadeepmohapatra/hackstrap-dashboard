@@ -13,13 +13,17 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.grid2Follow {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
 .grid3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
 }
 
-@media all and (max-width: 480px) {
+@media (max-width: 600px) {
   .welcomeMsgParent {
     margin-right: 0px;
     margin-left: 0px;

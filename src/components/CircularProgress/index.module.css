@@ -64,3 +64,9 @@
   -webkit-animation: load 2s;
   animation: load 2s;
 }
+
+.centerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -3,7 +3,7 @@ import Styles from "./index.module.css";
 
 function CircularProgress({ progress }) {
   return (
-    <div>
+    <div className={Styles.centerDiv}>
       <ul className={Styles.progress}>
         <li data-name="" data-percent={`${progress}%`}>
           <svg viewBox="-10 -10 220 220">
