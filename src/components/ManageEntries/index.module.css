@@ -78,10 +78,8 @@
   background: rgba(207, 216, 220, 0.2);
   margin: 5px;
   padding: 5px;
-  font-weight: 500;
 }
 .entriesList li:nth-child(odd) {
-  font-weight: 500;
   background: rgba(239, 239, 239, 0.2);
   margin: 5px;
   padding: 5px;

@@ -57,15 +57,15 @@ function CustomerSupport({ showAll }) {
       {show && (
         <>
           <div className={Styles.line}></div>
-          <h4>
+          <p>
             Contact us for any queries or support at{" "}
             <strong>contact@hackstrap.com</strong> or
             <strong>+91 8639688604</strong>
-          </h4>
-          <h4>
+          </p>
+          <p>
             Join the telegram support group chat with this{" "}
             <strong>invite link</strong>{" "}
-          </h4>
+          </p>
         </>
       )}
     </div>

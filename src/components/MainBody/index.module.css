@@ -1,5 +1,6 @@
 .welcomeMsgParent {
-  margin-right: 200px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .line {
@@ -21,6 +22,7 @@
 @media all and (max-width: 480px) {
   .welcomeMsgParent {
     margin-right: 0px;
+    margin-left: 0px;
   }
 
   .grid2 {
